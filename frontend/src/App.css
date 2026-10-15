@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+body{
+  font-family: "Manrope", system-ui, sans-serif;
+  overflow-x : hidden;
+  background-color: #ebebeb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration:  none;
+  color : #ffd15d;
+}
+
+p{
+  margin: 1.5em 0;
+  line-height: 1.7em;
+  max-width: 600px;
+  font-size : 1.1em;
+  color : #e1e1e1;
+}
+
+h1{
+  font-size : 4em;
+  font-weight: 800;
+  font-size : clamp(2em, 6vw, 7em);
+}
+
+h2{
+  font-size:2.5em;
+}
+
+h3{
+  font-size:1.8em;
+}
+.container{
+  max-width: 1200px;
+  margin : 0 auto;
+  padding : 2em;
+}
+
+.hero{
+  height: 100vh; 
+  min-height: 35em;
+  /* background-image: url(./assets/car.png); */
+  background-color:#2a3036;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.car-top-view{
+  position: absolute;
+  top : 10%;
+  left: 80%;
+}
+.car-top-view2{
+  position: absolute;
+  top : 280%;
+  height: 333px;
+  left: 60%;
+}
+.hero .container{
+  height: 100%;
+  position: relative;
+}
+
+.hero h1{
+  color : #fff;
+  margin-top: 70px;
+  font-size : 4em;
+}
+
+.title{
+  text-align : center;
+  position: relative;
+  z-index: 1;
+  border: none; 
+}
+.title h1{
+  line-height: 1em;
+}
+
+.ampersand{
+  color: #111;
+}
+.text-lleft{
+  transform:translate(-40vw);
+}
+
+.text-rright{
+  transform: translateX(40vw);
+  color : #fe8900;
+}
+
+.text-lleft .text-rright{
+  opacity: 0;
+}
+
+.moving-car{
+  width: 100%;
+  max-width:1000px;
+  position: relative;
+}
+
+.moving-car::before{
+  content:"";
+  position: absolute;
+  bottom : 15%;
+  left:50%;
+  transform: translateX(-50%);
+  height:2em;
+  width:85%;
+  border-radius:20%;
+  background-color:#111;
+  filter:blur(15px);
+}
+
+.sideview{
+  width:100%;
+}
+
+.rear{
+  position: absolute;
+  top: 58%;
+  left:12%;
+  width:16%;
+}
+.front{
+  position: absolute;
+  top: 60%;
+  left:68%;
+  width:14%;
+}
+
+.moving-car{
+  transform: translateX(-120vw);
+}
+
+.specs h2{
+  margin-top: 4rem;
+}
+
+p{
+  margin-block : 1.5em;
+  padding-bottom : 2em;
+  font-size:1.5em;
+  color:#919191;
+  border-bottom:1px #c6c6c6 solid;
+}
+.percentage{
+  font-size : 3rem;
+  font-weight : 800;
+  color: #fe8900;
+}
+
+footer{
+  margin-top: 8em;
+  position:relative;
+  color: #fff;
+  background-color:#2a3036;
+}
+
+.hero::before{
+  content:"";
+  position: absolute;
+  left:50%;
+  bottom: -10em;
+  background-color: #ebebeb;
+  width:120%;
+  height:15em;
+  transform: translateX(-50%) rotate(5deg);
+}
+
+footer::before{
+  content: "";
+  position: absolute;
+  left : 50%;
+  top: -5rem;
+  background-color: #2a3036;
+  width: 120%;
+  transform: translateX(-50%) rotate(-5deg);
+  z-index:-1;
+}
