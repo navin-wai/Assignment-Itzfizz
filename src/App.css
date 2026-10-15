@@ -177,14 +177,3 @@ footer{
   height:15em;
   transform: translateX(-50%) rotate(5deg);
 }
-
-footer::before{
-  content: "";
-  position: absolute;
-  left : 50%;
-  top: -5rem;
-  background-color: #2a3036;
-  width: 120%;
-  transform: translateX(-50%) rotate(-5deg);
-  z-index:-1;
-}
